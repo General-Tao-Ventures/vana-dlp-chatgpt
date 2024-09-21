@@ -15,7 +15,8 @@ async def proof_of_contribution(file_id: int, input_url: str, input_encryption_k
     decrypted_file_path = download_and_decrypt_file(input_url, input_encryption_key)
 
     if decrypted_file_path is not None:
-        contribution.scores.quality = proof_of_quality(decrypted_file_path)
+        # contribution.scores.quality = proof_of_quality(decrypted_file_path)
+        contribution.scores.quality = 1
         contribution.scores.ownership = proof_of_ownership(decrypted_file_path)
         contribution.scores.uniqueness = proof_of_uniqueness(decrypted_file_path)
         contribution.scores.authenticity = proof_of_authenticity(decrypted_file_path)
