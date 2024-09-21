@@ -33,6 +33,14 @@ validation_config: Munch = munchify(
             "SAMPLE_SIZE": 1,
             "MAX_VALIDATION_CHUNK_SIZE": 4000,
         },
+        "moksha": {
+            "MIN_CONVERSATIONS": 5,
+            "MIN_AVG_MESSAGES": 2,
+            "MIN_AVG_MESSAGE_LENGTH": 30,
+            "THRESHOLD_SCORE": 60,
+            "SAMPLE_SIZE": 1,
+            "MAX_VALIDATION_CHUNK_SIZE": 4000,
+        },
         # Mainnet
         "mainnet": {
             "MIN_CONVERSATIONS": 10,
